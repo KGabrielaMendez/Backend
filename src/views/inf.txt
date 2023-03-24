@@ -1,0 +1,3 @@
+componentes funcionales, 
+    son los que reciben y retornar informacion, 
+    tienen que utilizar react Hooks

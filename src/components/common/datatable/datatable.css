@@ -1,0 +1,8 @@
+.card {
+    background: rgb(176, 220, 223);
+	border: 3;
+    min-height: 100vh;
+    max-width: 400px;
+    background-color: papayawhip; 
+    margin: 0 auto;
+}

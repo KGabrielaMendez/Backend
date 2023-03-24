@@ -1,0 +1,90 @@
+header {
+	bottom:0;
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+	height:5%;
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#373a75;
+	margin-bottom:15px;
+	box-shadow: 5px 5px 8px rgb(128, 145, 122);
+}
+header .b {
+	position: relative;
+}
+header .wrapper {
+	width:100%; /* Establecemos que el ancho sera del 90% */
+	max-width:1000px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; /* Eliminamos errores de float */
+	
+}
+
+header .imgRedonda {
+    width:	100px;
+    height: 100px;
+    border-radius:150px;
+}
+header .card {
+	background: transparent;
+	border: none;
+}
+
+header .Button {
+	position: relative;
+
+}
+
+
+header .logo {
+	font-size:50px;
+	line-height:100px;
+	float:left
+}
+
+header nav {
+	float:right;
+	line-height:30%;
+}
+header Button {
+	float:right;
+	line-height:30%;
+}
+header a {
+	display:inline-block;
+	color:rgb(240, 241, 209);
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+header  a:hover {
+	background:#e1ecde;
+	box-shadow: 2px 2px 5px rgb(128, 145, 122);
+}
+
+
+/* para dispositivo movil */
+@media screen and (max-width: 950px) {
+	header .logo,
+	header nav {
+		
+		width:100%;
+		text-align:center; /*Centramos el menu y el logotipo*/
+		line-height:100px;
+	}
+
+	.header2 {
+		height:auto;
+	}
+
+	.header2 .logo,
+	.header2 nav {
+		line-height:50px;
+		background:#ffffff;
+	}
+	
+}

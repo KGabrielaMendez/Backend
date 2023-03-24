@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { Header, Footer } from './components/common';
+import AllRoutes from './routes';
+
+
+import "primereact/resources/themes/lara-light-indigo/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import LogInS from './views/login/login';
+import LoginContext from './Context/login';
+
 
 function App() {
+  const { sesion } = useContext(LoginContext);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        {!sesion ?
+
+          <LogInS />
+          :
+          <>
+            <Header />
+            
+            <div >
+              <AllRoutes />
+            </div>
+
+            <Footer />
+          </>
+        }
+
+
+
+
+      </BrowserRouter>
+
     </div>
   );
 }

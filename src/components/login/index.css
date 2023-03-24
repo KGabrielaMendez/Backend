@@ -1,0 +1,33 @@
+.form-demo .card {
+    width: 30%;
+    margin-left:30%;
+    display: flex
+}
+.form-logo .card-logo {
+    width: 30%;
+    margin-left:4%;
+    margin-top:1%;
+    align-items: center;
+
+}
+.form-demo .card form {
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+.form-demo .card .field {
+    margin-bottom: 1.5rem;
+    
+}
+@media screen and (max-width: 50%) {
+    .form-demo .card {
+        width: 50%;
+        display: flex
+    }
+}
+@media screen and (max-width: 640px) {
+    .form-demo .card {
+        width: 50%;
+        min-width: 5%;
+    }
+}
+   
